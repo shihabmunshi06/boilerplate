@@ -1,0 +1,23 @@
+@use "../../a-sass/base/abstracts.scss" as *;
+
+.grid {
+  height: auto;
+  display: grid;
+  gap: 2rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: 33vh;
+  grid-auto-rows: 33vh;
+
+  .card {
+    @extend %flex;
+    flex-direction: column;
+    .content {
+      @extend %flex;
+      max-width: 34rem;
+      background-color: coral;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

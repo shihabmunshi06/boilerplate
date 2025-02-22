@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  position: relative;
+
+  font-size: 1.6rem;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+body {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a,
+span,
+i {
+  display: inline-block;
+}
+a {
+  color: inherit;
+}
+svg {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: none;
+  color: inherit;
+  outline: none;
+  appearance: none;
+  resize: none;
+}
+button,
+label,
+input {
+  cursor: pointer;
+}
+
+label {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+textarea {
+  overflow: auto;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--text-color-main);
+  opacity: 0.2;
+}
+
+audio,
+video {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(3.6rem, calc(3vw + 1rem), 5.2rem);
+}
+h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 3%;
+}
+h3 {
+  font-weight: 500;
+}
+p {
+  color: var(--dark-grayish-blue);
+  line-height: 164%;
+}

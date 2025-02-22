@@ -1,0 +1,28 @@
+@use "../../a-sass/base/abstracts.scss" as *;
+
+.homepage {
+  @include flex();
+  gap: 4rem;
+  > * {
+    @extend %border;
+    flex-basis: 50%;
+  }
+
+  .left{
+    height: 100%;
+  }
+
+  .img-div {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .homepage {
+    flex-direction: column-reverse;
+    > * {
+      flex-basis: 50%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../base/abstracts" as *;
+
+#root {
+  @extend %flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  max-width: 144rem;
+}
+
+main {
+  > * {
+    @extend %border;
+    height: calc(100vh - 7rem);
+    padding: 2rem 4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  width: 100%;
+  max-width: 144rem;
+}
+
+#root:nth-child(2) {
+  padding-top: 7rem;
+}

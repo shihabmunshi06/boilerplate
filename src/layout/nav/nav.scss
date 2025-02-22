@@ -1,0 +1,10 @@
+@use "../../a-sass/base/abstracts.scss" as *;
+
+.top{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    background-color: teal;
+    z-index: 1;
+}

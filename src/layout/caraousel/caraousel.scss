@@ -1,0 +1,47 @@
+@use "../../a-sass/base/abstracts.scss" as *;
+
+.caraousel {
+  @extend %flex;
+  flex-direction: column;
+
+  .caraousel-mover {
+    width: 100%;
+    overflow-x: hidden;
+    @include flex();
+    .testimony {
+      @extend %flex;
+      padding: 0 3rem;
+      flex-direction: column;
+      gap: 0.4rem;
+      transition: transform 0.5s ease-in;
+      flex-basis: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 100%;
+      .content {
+        padding: 1rem 2rem;
+        background-color: coral;
+        width: 100%;
+        height: 100%;
+        p {
+          color: var(--dark-blue);
+        }
+      }
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 4rem;
+    align-self: flex-end;
+
+    @extend %flex;
+    gap: 2rem;
+    .prev,
+    .next {
+      @extend %border;
+      height: 4rem;
+      width: 12rem;
+      border-radius: 1rem;
+    }
+  }
+}
