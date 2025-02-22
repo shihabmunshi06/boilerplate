@@ -11,18 +11,22 @@ nav {
 }
 
 main {
-  > * {
-    @extend %border;
-    height: calc(100vh - 7rem);
-    padding: 2rem 4rem;
+  & {
+    width: 100%;
+    max-width: 144rem;
+  }
+
+  & > * {
+    & {
+      @extend %border;
+      height: calc(100vh - 7rem);
+      padding: 2rem 4rem;
+    }
 
     &:not(:last-child) {
       margin-bottom: 4rem;
     }
   }
-
-  width: 100%;
-  max-width: 144rem;
 }
 
 #root:nth-child(2) {
